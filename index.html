@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Crie seu evento</title>
+    <title>Formulário de evento</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins:wght@200;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -18,7 +18,41 @@
         <h1>Crie e compartilhe seu evento.</h1>
         <p>O primeiro passo, é preencher esse formulário de inscrição.</p>
       </header>
+      <form>
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Informações do evento</legend>
+            <div class="input-wrapper">
+              <label for="event-tittle"
+                >Titulo do evento <span>(mínimo de 8 caracteres)</span>
+              </label>
+              <input type="text" id="event-title" />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-link"
+                >Link do evento<span>(comece https://)</span>
+              </label>
+              <input
+                type="text"
+                id="event-link"
+                placeholder="https://examplegoogle.com"
+              />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-whatsapp"
+                >Whatsapp para contato<span>(somente números)</span>
+              </label>
+              <input type="text" id="event-whatsapp" />
+            </div>
+            <div class="input-wrapper">
+              <label for="event-whatsapp"
+                >Link do evento<span>(somente números)</span>
+              </label>
+              <textarea id="event-info"></textarea>
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </div>
-    <form></form>
   </body>
 </html>
